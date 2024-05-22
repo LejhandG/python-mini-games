@@ -32,10 +32,12 @@ def move_right():
 def move_left():
     if segments[0].heading() != 0:
         segments[0].setheading(180)
-    
+
+
 def move_up():
     if segments[0].heading() != 270:
         segments[0].setheading(90)
+
 
 def move_down():
     if segments[0].heading() != 90:
@@ -51,8 +53,10 @@ for position in starting_positions:
     new_segment.goto(position)
     segments.append(new_segment)
 
+file = open("database.txt", mode="r")
+high_score = file.read()
 score = 0
-title.write(f"Score: {score}", align="center", font=("candara", 24, "bold"))
+title.write(f"Score: {score}, High Score: {high_score}", align="center", font=("candara", 24, "bold"))
 
 screen.listen()
 screen.onkey(key="d", fun=move_right)
@@ -60,13 +64,27 @@ screen.onkey(key="a", fun=move_left)
 screen.onkey(key="w", fun=move_up)
 screen.onkey(key="s", fun=move_down)
 
+
+def check_high_score(score):
+    file = open("database.txt", mode="r")
+    content = file.read()
+    file.close()
+    file = open("database.txt", mode="w")
+    if content == '':
+        file.write(str(score))
+    elif score >= int(content):
+        file.write(str(score))
+    file.close()
+
+
+
 game_is_on = True
 while game_is_on:
     if segments[0].distance(food.pos()) <= 15:
         food.setpos(random.randint(-200, 200), random.randint(-200, 200))
         score += 1
         title.clear()
-        title.write(f"Score: {score}", align="center", font=("candara", 24, "bold"))
+        title.write(f"Score: {score}, High Score: {high_score}", align="center", font=("candara", 24, "bold"))
 
         new_segment = Turtle("square")
         new_segment.color("white")
@@ -77,12 +95,13 @@ while game_is_on:
     if abs(segments[0].xcor()) >= 300 or abs(segments[0].ycor()) >= 300:
         game_is_on = False
         game_over.write(f"Game Over", align="center", font=("candara", 48, "bold"))
-
+        check_high_score(score)
 
     for seg_num in range(1, len(segments)):
         if segments[0].distance(segments[seg_num].pos()) < 10:
             game_is_on = False
             game_over.write(f"Game Over", align="center", font=("candara", 48, "bold"))
+            check_high_score(score)
             break
 
     for seg_num in range(len(segments) - 1, 0, -1):
