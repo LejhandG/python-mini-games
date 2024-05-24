@@ -5,6 +5,7 @@ Welcome to the Mini Games Collection! This repository contains a collection of m
 1. **Snake Game**: A classic snake game where the snake grows by eating food.
 2. **Pong Game**: A 1v1 game where two paddles hit a ball back and forth.
 3. **Turtle Crossing**: A game where the player controls a turtle to cross the road while avoiding cars.
+4. **State Guessing Game**: A game where the map of America is displayed and you have to guess the states
 
 ## Table of Contents
 - [Games Included](#games-included)
@@ -23,6 +24,9 @@ A two-player game where each player controls a paddle and tries to hit the ball 
 
 ### Turtle Crossing
 Guide your turtle across a busy road, avoiding cars to reach the other side and win.
+
+### State Guessing
+Guess the states in the USA
 
 ## Installation
 
@@ -57,6 +61,11 @@ Each game is contained in its own Python file. You can run them using Python fro
     ```sh
     python turtlecrossing.py
     ```
+	
+- **State Guessing**:
+	```sh
+	python states.py
+	```
 
 ## Game Controls
 
@@ -69,6 +78,9 @@ Each game is contained in its own Python file. You can run them using Python fro
 
 ### Turtle Crossing
 - **Arrow keys** to move the turtle up use "Up" arrow key
+
+### States Guessing
+- **Just enter the names of the states in the input box prompted**
 
 ## Contributing
 
