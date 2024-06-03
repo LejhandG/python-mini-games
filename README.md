@@ -8,6 +8,7 @@ Welcome to the Mini Projects Collection! This repository contains a collection o
 4. **State Guessing Game**: A game where the map of America is displayed and you have to guess the states.
 5. **Pomodoro Timer**: A productivity timer that follows the Pomodoro Technique.
 6. **Password Manager**: A simple tool to manage and store your passwords securely.
+7. **Flash Cards**:  A simple flash cards to learn French words
 
 ## Table of Contents
 - [Projects Included](#projects-included)
@@ -35,6 +36,10 @@ A productivity timer that helps you break your work into intervals (usually 25 m
 
 ### Password Manager
 A tool to manage and store your passwords securely.
+
+### English-French Flash Cards
+A flash game to learn french words using Flash Card Game
+
 
 ## Installation
 
@@ -84,6 +89,11 @@ Each project is contained in its own Python file. You can run them using Python 
     ```sh
     python password_manager.py
     ```
+	
+- **Flash Card Game**:
+	```sh
+	python flashcards.py
+	```
 
 ## Project Controls
 
@@ -108,6 +118,10 @@ Each project is contained in its own Python file. You can run them using Python 
 ### Password Manager
 - **Add** a new password entry.
 - **View** existing password entries.
+
+### Flash Cards Game
+- **Right** click the check mark if you answered correct
+- **Wrong** click the wrong button if you answered wrong
 
 ## Contributing
 
