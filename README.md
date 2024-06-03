@@ -1,20 +1,22 @@
-# Mini Games Collection using Python Turtle
+# Mini Projects Collection using Python
 
-Welcome to the Mini Games Collection! This repository contains a collection of mini games written in Python using the built-in Turtle library. The games included are:
+Welcome to the Mini Projects Collection! This repository contains a collection of mini projects written in Python using the built-in Turtle library. The projects included are:
 
 1. **Snake Game**: A classic snake game where the snake grows by eating food.
 2. **Pong Game**: A 1v1 game where two paddles hit a ball back and forth.
 3. **Turtle Crossing**: A game where the player controls a turtle to cross the road while avoiding cars.
-4. **State Guessing Game**: A game where the map of America is displayed and you have to guess the states
+4. **State Guessing Game**: A game where the map of America is displayed and you have to guess the states.
+5. **Pomodoro Timer**: A productivity timer that follows the Pomodoro Technique.
+6. **Password Manager**: A simple tool to manage and store your passwords securely.
 
 ## Table of Contents
-- [Games Included](#games-included)
+- [Projects Included](#projects-included)
 - [Installation](#installation)
 - [How to Run](#how-to-run)
-- [Game Controls](#game-controls)
+- [Project Controls](#project-controls)
 - [Contributing](#contributing)
 
-## Games Included
+## Projects Included
 
 ### Snake Game
 The classic snake game where the objective is to eat food and grow longer without running into the walls or itself.
@@ -26,14 +28,20 @@ A two-player game where each player controls a paddle and tries to hit the ball 
 Guide your turtle across a busy road, avoiding cars to reach the other side and win.
 
 ### State Guessing
-Guess the states in the USA
+Guess the states in the USA.
+
+### Pomodoro Timer
+A productivity timer that helps you break your work into intervals (usually 25 minutes), separated by short breaks.
+
+### Password Manager
+A tool to manage and store your passwords securely.
 
 ## Installation
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/LejhandG/python-mini-games.git
-    cd mini-games-turtle
+    git clone https://github.com/LejhandG/python-mini-projects.git
+    cd python-mini-projects
     ```
 
 2. **Ensure you have Python installed** (Python 3.9+ is recommended). You can download it from [python.org](https://www.python.org/).
@@ -45,7 +53,7 @@ Guess the states in the USA
 
 ## How to Run
 
-Each game is contained in its own Python file. You can run them using Python from the command line:
+Each project is contained in its own Python file. You can run them using Python from the command line:
 
 - **Snake Game**:
     ```sh
@@ -66,8 +74,18 @@ Each game is contained in its own Python file. You can run them using Python fro
 	```sh
 	python states.py
 	```
+	
+- **Pomodoro Timer**:
+    ```sh
+    python pomodoro.py
+    ```
 
-## Game Controls
+- **Password Manager**:
+    ```sh
+    python password_manager.py
+    ```
+
+## Project Controls
 
 ### Snake Game
 - **W S A D** to move the snake up, down, left, and right.
@@ -77,10 +95,19 @@ Each game is contained in its own Python file. You can run them using Python fro
 - **Player 2 (Right Paddle)**: `Up Arrow` to move up, `Down Arrow` to move down.
 
 ### Turtle Crossing
-- **Arrow keys** to move the turtle up use "Up" arrow key
+- **Arrow keys** to move the turtle. Use the "Up" arrow key to move forward.
 
-### States Guessing
-- **Just enter the names of the states in the input box prompted**
+### State Guessing
+- **Enter** the names of the states in the input box prompted.
+
+### Pomodoro Timer
+- **Start** the timer to begin the Pomodoro session.
+- **Break** when the timer indicates to take a break.
+- **Reset** to start a new session.
+
+### Password Manager
+- **Add** a new password entry.
+- **View** existing password entries.
 
 ## Contributing
 
@@ -95,6 +122,6 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 ---
 
-Enjoy playing these classic mini games! If you have any questions or run into any issues, feel free to open an issue on GitHub.
+Enjoy exploring these mini projects! If you have any questions or run into any issues, feel free to open an issue on GitHub.
 
-Happy Gaming! 🎮🐢
+Happy Coding! 🎮🐢
