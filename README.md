@@ -1,6 +1,6 @@
 # Mini Projects Collection using Python
 
-Welcome to the Mini Projects Collection! This repository contains a collection of mini projects written in Python using the built-in Turtle library. The projects included are:
+Welcome to the Mini Projects Collection! This repository contains a collection of mini projects written in Python using the built-in Turtle library and other libraries. The projects included are:
 
 1. **Snake Game**: A classic snake game where the snake grows by eating food.
 2. **Pong Game**: A 1v1 game where two paddles hit a ball back and forth.
@@ -10,6 +10,7 @@ Welcome to the Mini Projects Collection! This repository contains a collection o
 6. **Password Manager**: A simple tool to manage and store your passwords securely.
 7. **Flash Cards**: A simple flash cards game to learn French words.
 8. **Email OTP Auth**: A GUI app that sends an email with an OTP, which you then verify within the app.
+9. **Trivia Game**: A trivia quiz game using the Trivia API and Tkinter for the GUI.
 
 ## Table of Contents
 - [Projects Included](#projects-included)
@@ -44,6 +45,9 @@ A flash card game to learn French words.
 ### Email OTP Auth
 A GUI app that sends an email with a One-Time Password (OTP) and allows you to verify it within the app.
 
+### Trivia Game
+A trivia quiz game that fetches questions from the Trivia API and presents them in a Tkinter GUI.
+
 ## Installation
 
 1. **Clone the repository**:
@@ -59,6 +63,7 @@ A GUI app that sends an email with a One-Time Password (OTP) and allows you to v
     pip install PythonTurtle
     pip install smtplib
     pip install tkinter
+    pip install requests
     ```
 
 ## How to Run
@@ -105,6 +110,11 @@ Each project is contained in its own Python file. You can run them using Python 
     python email_otp_auth.py
     ```
 
+- **Trivia Game**:
+    ```sh
+    python trivia_game.py
+    ```
+
 ## Project Controls
 
 ### Snake Game
@@ -136,6 +146,10 @@ Each project is contained in its own Python file. You can run them using Python 
 ### Email OTP Auth
 - **Send OTP**: Click the button to send an OTP to your email.
 - **Verify OTP**: Enter the received OTP and click the button to verify.
+
+### Trivia Game
+- **Next** to fetch and display the next trivia question.
+- **Submit** to check the answer.
 
 ## Contributing
 
