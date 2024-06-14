@@ -11,6 +11,7 @@ Welcome to the Mini Projects Collection! This repository contains a collection o
 7. **Flash Cards**: A simple flash cards game to learn French words.
 8. **Email OTP Auth**: A GUI app that sends an email with an OTP, which you then verify within the app.
 9. **Trivia Game**: A trivia quiz game using the Trivia API and Tkinter for the GUI.
+10. **Stock Tracker**: A tool that tracks stock prices and sends an email alert if significant changes occur, including top news articles.
 
 ## Table of Contents
 - [Projects Included](#projects-included)
@@ -47,6 +48,9 @@ A GUI app that sends an email with a One-Time Password (OTP) and allows you to v
 
 ### Trivia Game
 A trivia quiz game that fetches questions from the Trivia API and presents them in a Tkinter GUI.
+
+### Stock Tracker
+A tool that tracks stock prices and sends an email alert if significant changes occur, including top news articles.
 
 ## Installation
 
@@ -115,6 +119,11 @@ Each project is contained in its own Python file. You can run them using Python 
     python trivia_game.py
     ```
 
+- **Stock Tracker**:
+    ```sh
+    python stock_tracker.py
+    ```
+
 ## Project Controls
 
 ### Snake Game
@@ -150,6 +159,11 @@ Each project is contained in its own Python file. You can run them using Python 
 ### Trivia Game
 - **Next** to fetch and display the next trivia question.
 - **Submit** to check the answer.
+
+### Stock Tracker
+- **Set Stock Symbol**: Enter the stock symbol you want to track.
+- **Set Threshold**: Enter the percentage threshold for price change alerts.
+- **Run Tracker**: The tool will check the stock price changes and send an email alert if the threshold is exceeded, including top news articles related to the company.
 
 ## Contributing
 
